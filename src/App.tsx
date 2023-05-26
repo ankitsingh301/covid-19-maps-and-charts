@@ -10,7 +10,7 @@ const baseurl = process.env.PUBLIC_URL;
 const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouter basename={baseurl}>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
