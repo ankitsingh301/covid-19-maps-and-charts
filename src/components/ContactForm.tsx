@@ -1,4 +1,4 @@
-//Create contact form to create new contact and also to edit the existing contact
+//Create contact form to create new contact and also with edit and delete the existing contact funtionality.
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
