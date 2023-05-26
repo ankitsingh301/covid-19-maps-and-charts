@@ -12,10 +12,10 @@ const App: React.FC = () => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter basename={baseurl}>
         <Routes>
-          <Route path={`${baseurl}"/"`} element={<Home />}></Route>
-          <Route path={`${baseurl}"/contact"`} element={<Contact />}></Route>
+          <Route path={baseurl + "/"} element={<Home />}></Route>
+          <Route path={baseurl + "/contact"} element={<Contact />}></Route>
           <Route
-            path={`${baseurl}"/baseurl/charts-and-maps"`}
+            path={baseurl + "charts-and-maps"}
             element={<ChartsandMaps />}
           ></Route>
         </Routes>
