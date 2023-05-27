@@ -62,13 +62,13 @@ const ContactForm: React.FC = () => {
           <div className="text-center">
             <div className="mt-4">
               <input
-                className="border-2 border-slate-500 w-full"
+                className="border-2 border-slate-500 w-full pl-0.5"
                 type="text"
                 name="firstName"
                 defaultValue={`${
                   selectedContact && selectedContact.firstName
                     ? selectedContact.firstName
-                    : "First Name"
+                    : ""
                 }`}
                 onChange={handleInputChange}
                 required
@@ -76,13 +76,13 @@ const ContactForm: React.FC = () => {
             </div>
             <div className="mt-4">
               <input
-                className="border-2 border-slate-500 w-full"
+                className="border-2 border-slate-500 w-full pl-0.5"
                 type="text"
                 name="lastName"
                 defaultValue={`${
                   selectedContact && selectedContact.lastName
                     ? selectedContact.lastName
-                    : "Last Name"
+                    : ""
                 }`}
                 onChange={handleInputChange}
                 required
