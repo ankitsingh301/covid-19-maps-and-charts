@@ -55,7 +55,7 @@ const MapLatyout: React.FC = () => {
       <div className="mx-16 py-8">
         <MapContainer
           center={position}
-          zoom={13}
+          zoom={5}
           scrollWheelZoom={false}
           style={{
             width: "100%",
