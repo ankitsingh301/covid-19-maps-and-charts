@@ -41,11 +41,18 @@ const MapLatyout: React.FC = () => {
   return (
     <div className="text-center mb-80">
       <div className="mt-8">
+        <div className="font-extrabold text-4xl text-red-600 text-center py-4">
+          COVID-19 cases around the globe
+        </div>
         <div className="font-bold text-blue-600">Please choose a Country</div>
         <select onChange={handleCountryChange}>
           {data.map((item: any) => {
             return (
-              <option className="w-full" value={item.country}>
+              <option
+                className="w-full"
+                value={item.country}
+                key={item.country}
+              >
                 {item.country}
               </option>
             );
